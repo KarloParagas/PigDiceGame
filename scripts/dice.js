@@ -22,6 +22,10 @@ window.onload = function () {
     document.getElementById("hold").onclick = holdDie;
 };
 function createNewGame() {
+    var player1Score = 0;
+    document.getElementById("score1").value = player1Score.toString();
+    var player2Score = 0;
+    document.getElementById("score2").value = player2Score.toString();
     if (document.getElementById("player1").value == ""
         || document.getElementById("player2").value == "") {
         alert("Must provide a name");
@@ -79,10 +83,8 @@ function determineWinner() {
     var currentPlayerName = document.getElementById("current").innerText;
     if (score1 >= 100) {
         alert(currentPlayerName + " wins!");
-        location.reload();
     }
     if (score2 >= 100) {
         alert(currentPlayerName + " wins!");
-        location.reload();
     }
 }

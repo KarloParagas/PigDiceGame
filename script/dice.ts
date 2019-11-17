@@ -30,6 +30,12 @@ window.onload = function(){
 }
 
 function createNewGame(){
+    //Set player scores to 0
+    let player1Score = 0;
+    (<HTMLInputElement>document.getElementById("score1")).value =player1Score.toString();
+    let player2Score = 0;
+    (<HTMLInputElement>document.getElementById("score2")).value = player2Score.toString();
+
     //verify each player has a name
     //if both players don't have a name display error
     if((<HTMLInputElement>document.getElementById("player1")).value == "" 
@@ -57,7 +63,7 @@ function rollDie():void{
     if(dice == 1){
         alert("OOPS! You rolled a 1!");
 
-        //  set current total to 0
+        //  set current turn total to 0
         currTotal = 0;
         (<HTMLInputElement>document.getElementById("total")).value = currTotal.toString();
 
@@ -128,10 +134,8 @@ function determineWinner():void{
 
     if(score1 >= 100){
         alert(currentPlayerName + " wins!");
-        location.reload(); //Resets the whole page once there is a winner
     }
     if(score2 >= 100){
         alert(currentPlayerName + " wins!");
-        location.reload();
     }
 }
