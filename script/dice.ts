@@ -42,6 +42,9 @@ function createNewGame(){
     || (<HTMLInputElement>document.getElementById("player2")).value == "" ){
         alert("Must provide a name");
     }
+    else if((<HTMLInputElement>document.getElementById("player1")).value == (<HTMLInputElement>document.getElementById("player2")).value){
+        alert("Both players must have unique names");
+    }
     else{
         //if both players do have a name start the game!
         document.getElementById("turn").classList.add("open");

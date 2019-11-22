@@ -30,6 +30,9 @@ function createNewGame() {
         || document.getElementById("player2").value == "") {
         alert("Must provide a name");
     }
+    else if (document.getElementById("player1").value == document.getElementById("player2").value) {
+        alert("Both players must have unique names");
+    }
     else {
         document.getElementById("turn").classList.add("open");
         document.getElementById("total").value = "0";
