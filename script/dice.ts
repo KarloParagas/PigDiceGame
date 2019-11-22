@@ -32,7 +32,7 @@ window.onload = function(){
 function createNewGame(){
     //Set player scores to 0
     let player1Score = 0;
-    (<HTMLInputElement>document.getElementById("score1")).value =player1Score.toString();
+    (<HTMLInputElement>document.getElementById("score1")).value = player1Score.toString();
     let player2Score = 0;
     (<HTMLInputElement>document.getElementById("score2")).value = player2Score.toString();
 
