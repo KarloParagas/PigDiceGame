@@ -1,5 +1,5 @@
 # Pig Dice Game
-A fun little game where two players take turns rolling a dice, to reach at score of 100.
+A fun little game where two players take turns rolling a dice. First player to reach a score of 100 wins the game.
 
 # Getting Started
 - Must have [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432) installed
